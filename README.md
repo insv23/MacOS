@@ -25,7 +25,24 @@ sudo spctl --master-disable
 ## 常用软件
 
 - 安装一栏中默认字符为 brew 中软件名，链接为安装包备份，空白为自行前往软件官网下载
-- [macOS 使用 homebrew-bundle 优雅的备份和恢复软件列表 | HelloDog](https://wsgzao.github.io/post/homebrew-bundle/)
+- 备份
+
+    - 参考链接：[macOS 使用 homebrew-bundle 优雅的备份和恢复软件列表 | HelloDog](https://wsgzao.github.io/post/homebrew-bundle/)
+
+    - 备份(仅有brew 安装的软件，App Store 和第三方dmg安装未备份)
+
+        ```shell
+        brew bundle dump --describe --force --file="~/Documents/MacOS/brew_backup/Brewfile_2023-07-18"
+        ```
+
+    - 恢复
+
+        ```shell
+        brew bundle --file="~/Documents/MacOS/brew_backup/Brewfile_2023-07-18"
+        ```
+
+        
+
 
 | 名字                                                         | 介绍                                                         | 价格                                                         | 安装                                                         | 替代品                                                       |
 | :----------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
