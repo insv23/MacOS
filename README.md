@@ -29,7 +29,7 @@ sudo spctl --master-disable
 
     - 参考链接：[macOS 使用 homebrew-bundle 优雅的备份和恢复软件列表 | HelloDog](https://wsgzao.github.io/post/homebrew-bundle/)
 
-    - 备份(仅有brew 安装的软件，App Store 和第三方dmg安装未备份)
+    - 备份(仅有brew 安装的软件，App Store 和第三方dmg安装未备份，[备份文件地址](https://github.com/insv23/MacOS/tree/main/brew_backup))
 
         ```shell
         brew bundle dump --describe --force --file="~/Documents/MacOS/brew_backup/Brewfile_2023-07-18"
